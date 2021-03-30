@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+    padding-top: 25px;
+    background: aliceblue;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 85%;
+    width: 100%;
+    padding: 30px;
+    background: cornflowerblue;
+}
+
+.score-container {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    color: white;
+}
+
+#score {
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+
+.user {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: blue;
+    width: 40px;
+    height: 15px;
+    font-size: 10px;
+    padding: 2px 10px;
+}
+
+.com {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background: blue;
+    width: 40px;
+    height: 15px;
+    font-size: 10px;
+    padding: 2px 10px;
+}
+
+.buttons {
+    width: 280px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bn {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: 3px solid cornflowerblue;
+    border-radius: 50%;
+    color: cornflowerblue;
+    font-size: 30px;
+    background: cornsilk;
+    cursor: pointer;
+    outline: none;
+    transition: .35%;
+}
+
+.bn:hover {
+    background-color: cornflowerblue;
+    border-color: white;
+    color: whitesmoke;
+}
+
+.challenge {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 540px;
+    height: 40%;
+}
