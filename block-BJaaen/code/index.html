@@ -4,33 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/10d78f47ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Rock Paper and Scissors</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1>Rock Paper Scissors Game</h1>
-    </header>
-    <div class="container">
-        <div class="score-container">
-            <span class="user">YOU</span>
-            <span id="score">0 - 0</span>
-            <span class="com">COM</span>
+    <main class="game-container">
+        <h1 class="header">Rock Paper Scissors</h1>
+        <button class="reset-icon">Reset</button>
+        <div class="user player-container ">
+            <span>YOU: (Select One)</span>
+            <ul class="user-icons far result-container"></ul>
         </div>
-        <div class="buttons">
-            <button class="bn" onclick="" value=""><i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
-            <button class="bn" onclick="" value=""><i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
-            <button class="bn" onclick="" value=""><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></button>
+        <div class="computer player-container ">
+            <span>COMPUTER: (Auto Generated)</span>
+            <ul class="computer-icons far result-container"></ul>
         </div>
-        <div class="challenge">
-            <div class="yourobject"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></div>
-            <div class="result">You Win</div>
-            <div class="comObject"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></div>
-
-        </div>
-    </div>
+        <div class="result result-text result-container"></div>
+    </main>
 
     <script src="./script.js"></script>
 </body>
