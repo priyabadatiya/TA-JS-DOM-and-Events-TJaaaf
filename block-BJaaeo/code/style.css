@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background-color: black;
+    color: white;
+    padding: 1.2rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.grid-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    grid-template-areas: "plus minus multiply divide" "seven eight nine equal" "four five six equal" "one two three equal" "dot zero clear";
+}
