@@ -29,9 +29,11 @@ function handleSubmit(event) {
     let passwordEle = event.target.elements.password;
     let ConfirmPasswordEle = event.target.elements.confirmPassword;
 
-    if (usernameEle.value.length < 4) {
+    if (usernameEle.value.length <= 4) {
         usernameError = "Can't be less than 4 character";
-        usernameEle.nextElementSibling.innerText = usernameError;
+        console.log(usernameEle)
+        usernameEle.innerText = usernameError;
+
     } else if (includeNumbers(nameEle.value)) {
         console.log(nameEle.value);
         nameError = "You can't use number in the name field";
@@ -42,9 +44,12 @@ function handleSubmit(event) {
     } else if (isAllNumbers(phoneEle.value)) {
         phoneError = "Phone number can only contain numbers";
         phoneEle.nextElementSibling.innerText = phoneError;
-    } else if (passwordEle.value != ConfirmPasswordEle.value) {
+    } else if (passwordEle.value !== ConfirmPasswordEle.value) {
         passwordError = "Password and confirm password must be same";
-        ConfirmPasswordEle.nextElementSibling.innerText = passwordError;
+        ConfirmPasswordEle.innerText = passwordError;
+    } else {
+        displaySuccess("password")
+        displaySuccess("password-check");
     }
     alert("User added sucessfully");
 }
