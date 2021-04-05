@@ -23,7 +23,6 @@ function render(array) {
         button.innerText = "Learn More!";
         button.href = person.wikiLink;
         article.append(image, heading, para, button);
-
         div.append(article);
         parentDiv.append(div);
     });
