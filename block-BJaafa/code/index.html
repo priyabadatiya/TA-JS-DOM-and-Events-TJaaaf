@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome Extension</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="online-indicator">
+            <span class="blink"></span>
+        </div>
+        <h2 class="online-text"></h2>
+    </div>
+
+    <div class="pos">
+        <iframe src="https://openspeedtest.com/Get-widget.php" width="735" scrolling="no" height="490" frameborder="0">
+  </iframe>
+    </div>
+
+
+    <div class="switch_parent">Todo
+        <input type="checkbox" hidden="hidden" id="username">
+        <label class="switch" for="username"></label>
+    </div>
+
+
+    <div class="input-box">
+        <div class="box">
+            <a href="#" id="toggleSelect"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <input type="text" placeholder="What needs to be done?" id="text" />
+
+    </div>
+
+    <div class="todo">
+        <ul></ul>
+
+        <div class="list_box">
+            <div class="list-box">
+                <div class="all">All</div>
+                <div class="complete">Completed</div>
+                <div class="incomplete">Active</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="list_box">
+            <div class="borders">
+                <div class="border border-1"></div>
+                <div class="border border-2"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
